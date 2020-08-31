@@ -9,13 +9,23 @@
 import UIKit
 
 class ContactsViewController: UIViewController {
-
-    let contacts = ["Tristan Chung", "Brother", "Hot Blonde", "Drug Dealer"]
+    
+    @IBOutlet weak var ContactsTableView: UITableView!
+    
+    var contacts: [Contact] = [
+        Contact(firstName: "Tristan", lastName: "Chung", image: UIImage(systemName: "person.circle.fill")),
+        Contact(firstName: "Jack", lastName: "Newsom", image: UIImage(systemName: "person.circle.fill")),
+        Contact(firstName: "Kelsey", lastName: "Lieberman", image: UIImage(systemName: "person.circle.fill")),
+        Contact(firstName: "Mike", lastName: "Hawk", image: UIImage(systemName: "person.circle.fill")),
+        Contact(firstName: "Joe", lastName: "Mama", image: UIImage(systemName: "person.circle.fill"))
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        ContactsTableView.dataSource = self
+        ContactsTableView.register(UINib(nibName: "ContactsCell", bundle: nil), forCellReuseIdentifier: "ContactsCell")
     }
     
 
@@ -29,4 +39,20 @@ class ContactsViewController: UIViewController {
     }
     */
 
+}
+
+extension ContactsViewController : UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return contacts.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = ContactsTableView.dequeueReusableCell(withIdentifier: "ContactsCell", for: indexPath) as! ContactsCell
+        let currentContact = contacts[indexPath.row]
+        cell.personLabel.text = "\(String(describing: currentContact.firstName)) \(String(describing: currentContact.lastName))"
+        cell.personImage.image = currentContact.image
+        return cell
+    }
+    
+    
 }

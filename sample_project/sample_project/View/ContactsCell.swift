@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ContactsCellTableViewCell: UITableViewCell {
+class ContactsCell: UITableViewCell {
 
     @IBOutlet weak var personLabel: UILabel!
     @IBOutlet weak var personImage: UIImageView!
@@ -16,8 +16,6 @@ class ContactsCellTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        personLabel.text = "Tristan Chung"
-        personImage.image = UIImage(named: "person.fill")
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
