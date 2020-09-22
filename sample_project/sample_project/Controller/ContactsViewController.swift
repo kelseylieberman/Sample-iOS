@@ -8,9 +8,12 @@
 
 import UIKit
 
-class ContactsViewController: UIViewController {
+class ContactsViewController: UIViewController{
     
     @IBOutlet weak var ContactsTableView: UITableView!
+    @IBOutlet weak var menuButton: UIBarButtonItem!
+    
+    let transition = SlideTransition()
     
     var contacts: [Contact] = [
         Contact(firstName: "Tristan", lastName: "Chung", image: UIImage(systemName: "person.circle.fill")),
@@ -24,11 +27,30 @@ class ContactsViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        ///Set controller or "delegate" of table view to the ContactsViewController (slef)
+        ContactsTableView.delegate = self
+        
         ContactsTableView.dataSource = self
         ContactsTableView.register(UINib(nibName: "ContactsCell", bundle: nil), forCellReuseIdentifier: "ContactsCell")
     }
     
-
+    @IBAction func didTapMenuButton(_ sender: Any) {
+        guard let menuViewController = storyboard?.instantiateViewController(identifier: "MenuViewController") as? MenuViewController else {return}
+        menuViewController.didTapMenuType = { menuType in
+            self.transitionToNew(menuType)
+        }
+        menuViewController.modalPresentationStyle = .overCurrentContext
+        menuViewController.transitioningDelegate = self
+        present(menuViewController, animated: true, completion: nil)
+    }
+    
+    //Handles Menu Transitions
+    func transitionToNew(_ menuType: MenuType) {
+        let title = String(describing: menuType).capitalized
+        self.title = title
+        
+    }
     /*
     // MARK: - Navigation
 
@@ -39,6 +61,13 @@ class ContactsViewController: UIViewController {
     }
     */
 
+}
+
+extension ContactsViewController : UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(indexPath)
+        
+    }
 }
 
 extension ContactsViewController : UITableViewDataSource {
@@ -55,4 +84,15 @@ extension ContactsViewController : UITableViewDataSource {
     }
     
     
+}
+
+extension ContactsViewController : UIViewControllerTransitioningDelegate {
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        transition.isPresenting = true
+        return transition
+    }
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        transition.isPresenting = false
+        return transition
+    }
 }

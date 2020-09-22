@@ -7,114 +7,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "6AF7BCF8-BD56-472E-85CB-4A6B195DA1FF"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "sample_project/Controller/ContactsViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "15"
-            endingLineNumber = "15"
-            landmarkName = "unknown"
-            landmarkType = "0">
-            <Locations>
-               <Location
-                  uuid = "6AF7BCF8-BD56-472E-85CB-4A6B195DA1FF - b867c55bb1223a21"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "sample_project.ContactsViewController.contacts.getter : Swift.Array&lt;sample_project.Contact&gt;"
-                  moduleName = "sample_project"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kelseylieberman/Documents/GitHub/Sample-iOS/sample_project/sample_project/Controller/ContactsViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "122">
-               </Location>
-               <Location
-                  uuid = "6AF7BCF8-BD56-472E-85CB-4A6B195DA1FF - 5f1f1864c8f43635"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "sample_project.ContactsViewController.contacts.setter : Swift.Array&lt;sample_project.Contact&gt;"
-                  moduleName = "sample_project"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kelseylieberman/Documents/GitHub/Sample-iOS/sample_project/sample_project/Controller/ContactsViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "148">
-               </Location>
-               <Location
-                  uuid = "6AF7BCF8-BD56-472E-85CB-4A6B195DA1FF - 9d5df9e8ebc58926"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "sample_project.ContactsViewController.contacts.modify : Swift.Array&lt;sample_project.Contact&gt;"
-                  moduleName = "sample_project"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kelseylieberman/Documents/GitHub/Sample-iOS/sample_project/sample_project/Controller/ContactsViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "18">
-               </Location>
-               <Location
-                  uuid = "6AF7BCF8-BD56-472E-85CB-4A6B195DA1FF - dab1b453bdfcf415"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "sample_project.ContactsViewController.contacts.modify : Swift.Array&lt;sample_project.Contact&gt; with unmangled suffix &quot;.resume.0&quot;"
-                  moduleName = "sample_project"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kelseylieberman/Documents/GitHub/Sample-iOS/sample_project/sample_project/Controller/ContactsViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "4">
-               </Location>
-               <Location
-                  uuid = "6AF7BCF8-BD56-472E-85CB-4A6B195DA1FF - 1ad4cd97c9530706"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "sample_project.ContactsViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; sample_project.ContactsViewController"
-                  moduleName = "sample_project"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kelseylieberman/Documents/GitHub/Sample-iOS/sample_project/sample_project/Controller/ContactsViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "354">
-               </Location>
-               <Location
-                  uuid = "6AF7BCF8-BD56-472E-85CB-4A6B195DA1FF - a961cf66f1193d07"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "sample_project.ContactsViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;sample_project.ContactsViewController&gt;"
-                  moduleName = "sample_project"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kelseylieberman/Documents/GitHub/Sample-iOS/sample_project/sample_project/Controller/ContactsViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "286">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "56E0414E-9391-42F7-91ED-63B4C1012B93"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -122,10 +14,10 @@
             filePath = "sample_project/Controller/ContactsViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "81"
+            endingLineNumber = "81"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
